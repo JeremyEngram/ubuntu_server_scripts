@@ -1,0 +1,10 @@
+#!/bin/bash
+
+sudo add-apt-repository multiverse
+sudo apt update
+sudo apt install virtualbox-guest-utils virtualbox-guest-x11
+
+lsmod | grep vbox | tee -a ~/show_vob_details_before_guest_additions
+
+sudo reboot
+
